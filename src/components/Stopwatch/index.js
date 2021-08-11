@@ -11,7 +11,7 @@ class Stopwatch extends Component {
     clearInterval(this.timeInterval)
   }
 
-  onResettimer = () => {
+  onResetTimer = () => {
     this.setState({timeElapsedInSeconds: 0})
     clearInterval(this.timeInterval)
   }
@@ -84,7 +84,7 @@ class Stopwatch extends Component {
               <button
                 type="button"
                 className="reset-button button"
-                onClick={this.onResettimer}
+                onClick={this.onResetTimer}
               >
                 Reset
               </button>
